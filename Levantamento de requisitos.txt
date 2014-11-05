@@ -1,0 +1,14 @@
+Documento para especificação dos requisitos que estarão presentes no site do Brejão UFLA
+
+Requisitante: Moradores do brejão
+
+Objetivo: Criar um site para o alojamento estudantil ufla, vulgo (brejão), que tera
+informações, fotos, história do brejão.
+
+Empresa produtora: Jensen/Grupython
+
+Custo: R$0,00
+
+Linguagem back-end: Python/Flask
+
+exemplo: http://aef.thalesog.com/
