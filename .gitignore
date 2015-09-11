@@ -1,2 +1,6 @@
-#
+#extensoes
 *.swp
+
+
+#arquivos
+npm.sublime-workspace

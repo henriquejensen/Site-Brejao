@@ -7,10 +7,16 @@ body {
     background-color: #FFFF90;
 }
 
-#mytop {
-	background-color: black;
-	color: white;
-	text-align:center;
+.topo {
+    height: 6em;
+}
+
+.topo-logo {
+    margin-top: 1.2em;
+}
+
+.topo-logo img {
+     height: 3em;
 }
 
 .item img {
@@ -20,10 +26,9 @@ body {
 
 }
 
-#menu-top {
-	border-radius: 0;
-    background-color: #402817;
-	text-align:center;
+.menu {
+	float: right;
+    margin-top: 1.2em;
 }
 
 #news {
@@ -37,4 +42,10 @@ body {
 .myfooter {
 	background-color: green;
 	color: white;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        float: left;
+    }
 }
