@@ -47,10 +47,11 @@ Como contribuir
 - Crie uma issue ou proponha um PR propondo alguma funcionalidade ou corrigindo algum erro:
 - Antes de realizar qualquer modificação:
     + sincronize seu fork com o projeto original
-        * como configurar um remoto para um fork
-            - https://help.github.com/articles/configuring-a-remote-for-a-fork/
-        * sincronizando um fork
-            - https://help.github.com/articles/syncing-a-fork/
+      * como configurar um remoto para um fork
+        -`git remote add upstream https://github.com/henriquejensen/brejao.git`
+      * sincronizando um fork
+        - `git fetch upstream`
+        - `git rebase upstream/master`        
     + crie um branch (localmente) para a issue que você deseja resolver com:
         - ` git checkout -b "fix_issue_X" ` 
 - Trabalhe localmente, faça suas modificações e commits no seu branch "fix_issue_X" e suba suas alterações para o seu fork remoto com:
