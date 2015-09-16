@@ -1,0 +1,47 @@
+body {
+    font-family: "Open sans", sans-serif;
+}
+
+.menu {
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 80;
+    width: 100%;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    height: 35em;
+    margin: 0;
+    text-align: center;
+    background-color: #9ABA9A;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../imgs/alojamento.jpg);
+}
+.logo-texto {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 60px;
+    text-shadow: 3px 3px black;
+}
+.container {
+    padding-top: 220px;
+    padding-bottom: 220px;
+}
+
+.sobre {
+    height: 500px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.rodape {
+    height: 10em;
+    background: #333333;
+}
