@@ -3,20 +3,36 @@ body {
     color: #333333;
 }
 
-.logo {
+#logo {
+    display: table;
     height: 35em;
     margin: 0;
+    width: 100%;
     text-align: center;
     background-color: #9ABA9A;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../imgs/alojamento.jpg);
+    background-image: url(../imgs/brazil.jpg);
+    text-shadow: 3px 3px black;
+    color: #FFF;
 }
+#logo-texto {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+#logo h1 {
+    font-size: 80px;
+}
+#logo p {
+    font-size: 40px;
+}
+
 .container {
+    width: 100%;
+    display: table;
     padding-top: 220px;
     padding-bottom: 220px;
 }
-
-
