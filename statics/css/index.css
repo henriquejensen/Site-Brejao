@@ -3,36 +3,58 @@ body {
     color: #333333;
 }
 
-#logo {
-    display: table;
-    height: 35em;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #9ABA9A;
+.nav {
+    height: 60px;
+}
+.nav a {
+    position: relative;
+    top: 20px;
+    padding: 14px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #5a5a5a;
+}
+.nav li {
+    display: inline;
+}
+
+.jumbotron {
+    height: 500px;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../imgs/brazil.jpg);
+}
+.jumbotron h1 {
+    color: #FFF !important;
     text-shadow: 3px 3px black;
+    font-weight: 700;
+
+}
+.jumbotron p {
     color: #FFF;
+    text-shadow: 3px 3px black;
+    font-size: 35px !important;
 }
-#logo-texto {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-}
-#logo h1 {
-    font-size: 80px;
-}
-#logo p {
-    font-size: 40px;
+.jumbotron .container {
+    position: relative;
+    top: 100px;
 }
 
-.container {
-    width: 100%;
-    display: table;
-    padding-top: 220px;
-    padding-bottom: 220px;
+.neighborhood-guides {
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #dbdbdb;
+}
+.neighborhood-guides h2 {
+    font-weight: bold;
+}
+
+.conteudo h3 {
+    font-weight: bold;
+}
+
+.panel-footer {
+    height: 80px;
 }
