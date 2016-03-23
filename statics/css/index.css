@@ -50,12 +50,8 @@ body {
     top: 100px;
 }
 
-.neighborhood-guides {
-    background-color: #f3f3f3;
-    border-bottom: 1px solid #dbdbdb;
-}
-.neighborhood-guides h2 {
-    font-weight: bold;
+#container-photos {
+    padding: 2em;
 }
 
 .conteudo h3 {
