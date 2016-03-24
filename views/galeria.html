@@ -10,119 +10,148 @@
     <title>Brejão UFLA</title>
 
     <!-- Bootstrap -->
-    <link href="../statics/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../statics/css/base.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../statics/css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="../statics/css/galeria.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="../statics/css/bootstrap-image-gallery.min.css">
 
   </head>
   <body>
 
-    <nav class="navbar navbar-default topo">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header topo-logo">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- <a class="navbar-brand" href="#">Brejão UFLA</a> -->
-          <img  src="../statics/imgs/brejao.png">
+    <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top" id="menu-topo">
+        <div class="container-nav">
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collection of nav links and other content for toggling -->
+            <div id="navbarCollapse" class="navbar-collapse collapse ">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><a href="index.html">Home</a></li>
+                    <li role="presentation"><a href="morar.html">Como morar</a></li>
+                    <li role="presentation"><a href="estrutura.html">Estrutura</a></li>
+                    <li role="presentation" class="active"><a href="galeria.html">Galeria</a></li>
+                    <li role="presentation"><a href="moradores.html">Moradores</a></li>
+                    <li role="presentation"><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse menu" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="morar.html">Como Morar</a> </li>
-            <li><a href="historia.html">História</a></li>
-            <li><a href="estrutura.html">Estrutura</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="moradores.html">Moradores</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
     </nav>
 
-    <center class="album">
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                    <td>
-                        <img src="#">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </center>
+    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery">
+        <!-- The container for the modal slides -->
+        <div class="slides"></div>
+        <!-- Controls for the borderless lightbox -->
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+        <!-- The modal dialog, which will be used to wrap the lightbox content -->
+        <div class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body next"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left prev">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                            Anterior
+                        </button>
+                        <button type="button" class="btn btn-primary next">
+                            Próxima
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="container-galery">
+        <div class="row">
+            <div class="col-md-3 col-xs-6">
+                <a href="../statics/imgs/bloco2.jpg" title="Banana" data-gallery>
+                    <img src="../statics/imgs/bloco2.jpg" alt="Banana">
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="../statics/imgs/brejao.jpg" title="Banana" data-gallery>
+                    <img src="../statics/imgs/brejao.jpg" alt="Banana">
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="../statics/imgs/bloco2.jpg" title="Banana" data-gallery>
+                    <img src="../statics/imgs/bloco2.jpg" alt="Banana">
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="../statics/imgs/brejao.jpg" title="Banana" data-gallery>
+                    <img src="../statics/imgs/brejao.jpg" alt="Banana">
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="../statics/imgs/bloco2.jpg" title="Banana" data-gallery>
+                    <img src="../statics/imgs/bloco2.jpg" alt="Banana">
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="../statics/imgs/brejao.jpg" title="Banana" data-gallery>
+                    <img src="../statics/imgs/brejao.jpg" alt="Banana">
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="../statics/imgs/bloco2.jpg" title="Banana" data-gallery>
+                    <img src="../statics/imgs/bloco2.jpg" alt="Banana">
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="../statics/imgs/brejao.jpg" title="Banana" data-gallery>
+                    <img src="../statics/imgs/brejao.jpg" alt="Banana">
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="../statics/imgs/bloco2.jpg" title="Banana" data-gallery>
+                    <img src="../statics/imgs/bloco2.jpg" alt="Banana">
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="../statics/imgs/brejao.jpg" title="Banana" data-gallery>
+                    <img src="../statics/imgs/brejao.jpg" alt="Banana">
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="../statics/imgs/bloco2.jpg" title="Banana" data-gallery>
+                    <img src="../statics/imgs/bloco2.jpg" alt="Banana">
+                </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="../statics/imgs/brejao.jpg" title="Banana" data-gallery>
+                    <img src="../statics/imgs/brejao.jpg" alt="Banana">
+                </a>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="col-md-12 col-xs-12 myfooter">
         <p class="myfooter-text">Copyrights mano!</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="../statics/js/bootstrap-image-gallery.min.js"></script>
   </body>
 </html>
