@@ -1,0 +1,75 @@
+body {
+    font-family: "Open sans", sans-serif;
+    color: #333333;
+}
+
+#menu-topo {
+    padding: 1em 2em;
+    font-size: 20px
+}
+#container-jumbo {
+    height: 100%;
+    position: relative;
+    background: #5C97FF;
+}
+/* You could use :after - it doesn't really matter */
+#container-jumbo:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*z-index: 1;*/
+    opacity: 0.6;
+    background-image: url(../imgs/brazil.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.jumbotron h1 {
+    color: #FFF !important;
+    text-shadow: 1px 2px black;
+    font-weight: 700;
+
+}
+.jumbotron h2 {
+    color: #FFF;
+    text-shadow: 1px 2px black;
+}
+.jumbotron .container {
+    position: relative;
+    padding-top: 200px;
+    text-align: center;
+}
+
+#container-photos {
+    padding: 2em;
+}
+#info {
+    text-align: center;
+}
+
+.conteudo h3 {
+    font-weight: bold;
+}
+
+.panel-footer {
+    height: 80px;
+}
+
+@media (max-width: 640px) {
+    #menu-topo {
+        padding: 0;
+        font-size: 16px
+    }
+    .jumbotron .container {
+        padding-top: 150px;
+    }
+}
