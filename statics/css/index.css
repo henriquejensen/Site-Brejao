@@ -8,11 +8,9 @@ body {
     font-size: 20px
 }
 #container-jumbo {
-    height: 30em;
+    height: 100%;
     position: relative;
     background: #5C97FF;
-    overflow: hidden;
-    margin: 0;
 }
 /* You could use :after - it doesn't really matter */
 #container-jumbo:before {
@@ -22,7 +20,7 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    height: 30em;
+    height: 100%;
     /*z-index: 1;*/
     opacity: 0.6;
     background-image: url(../imgs/brazil.jpg);
@@ -47,7 +45,8 @@ body {
 }
 .jumbotron .container {
     position: relative;
-    top: 100px;
+    padding-top: 200px;
+    text-align: center;
 }
 
 #container-photos {
@@ -63,4 +62,14 @@ body {
 
 .panel-footer {
     height: 80px;
+}
+
+@media (max-width: 640px) {
+    #menu-topo {
+        padding: 0;
+        font-size: 16px
+    }
+    .jumbotron .container {
+        padding-top: 150px;
+    }
 }
